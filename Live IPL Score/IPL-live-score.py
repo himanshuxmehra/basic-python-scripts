@@ -13,7 +13,7 @@ for i in json.loads(data)["matches"]:
         print("Live Match: \n")
         teams1 = json.loads(data)["matches"][i]["team1"]["name"]
         teams2 = json.loads(data)["matches"][i]["team2"]["name"]
-        score = json.loads(data)["matches"][i]["score"]["score"]
+        score = json.loads(data)["matches"][i]["score"]["batting"]["score"]
         status = json.loads(data)["matches"][i]["status"]
         print(teams1 +" vs "+ teams2)
         print(score)
